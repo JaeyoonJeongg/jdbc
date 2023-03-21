@@ -68,6 +68,14 @@ public class MemberRepositoryV0 {
     }
 
 
+    public void update(String memberId, int money) {
+        String sql = "update member set money=? where member_id=?";
+
+        Connection con = null;
+        PreparedStatement pstmt = null;
+    }
+
+
 
     private void close(Connection con, Statement stmt, ResultSet rs) {
 
